@@ -1,57 +1,69 @@
-<script setup>
+<script>
 import { ref, watch } from 'vue';
 import { percentageOfTotal } from '@snapshot-labs/snapshot.js/src/voting/quadratic';
 import { useMediaQuery } from '@vueuse/core';
 
-defineProps({
-  proposal: {
-    type: Object,
-    required: true
+export default {
+  // state
+  data() {
+    return {
+      vote: 0
+    };
+  },
+  // actions
+  methods: {
+    voteUp() {
+      if (this.vote < 10) {
+        this.vote++;
+      }
+    },
+
+    voteDown() {
+      if (this.vote > -10) {
+        this.vote--;
+      }
+    }
   }
-});
-
-const emit = defineEmits(['selectChoice']);
-
-const selectedChoices = ref({});
-
-const isSmallScreen = useMediaQuery('(max-width: 543px)');
-
-function percentage(i) {
-  return (
-    Math.round(
-      percentageOfTotal(
-        i + 1,
-        selectedChoices.value,
-        Object.values(selectedChoices.value)
-      ) * 10
-    ) / 10
-  );
-}
-
-function addVote(i) {
-  selectedChoices.value[i] = selectedChoices.value[i]
-    ? (selectedChoices.value[i] += 1)
-    : 1;
-}
-
-function removeVote(i) {
-  if (selectedChoices.value[i])
-    selectedChoices.value[i] =
-      selectedChoices.value[i] < 1 ? 0 : (selectedChoices.value[i] -= 1);
-}
+};
 
 // Delete choice if empty string or 0
-watch(selectedChoices.value, currentValue => {
-  Object.entries(currentValue).forEach(choice => {
-    if (choice[1] === '' || choice[1] <= 0)
-      delete selectedChoices.value[choice[0]];
-  });
-  emit('selectChoice', selectedChoices.value);
-});
+// watch(selectedChoices.value, currentValue => {
+//   Object.entries(currentValue).forEach(choice => {
+//     if (choice[1] === '' || choice[1] <= 0)
+//       delete selectedChoices.value[choice[0]];
+//   });
+//   emit('selectChoice', selectedChoices.value);
+// });
 </script>
 
 <template>
-  <div class="mb-3">
+  <div class="flex">
+    <div>
+      <QuadraticVotePool :vote="vote" :credits="vote * vote" />
+    </div>
+
+    <div class="flex flex-1 items-center justify-center">
+      <BaseButton
+        class="flex items-center justify-between overflow-hidden"
+        @click="voteUp()"
+      >
+        Agree
+      </BaseButton>
+
+      <div class="flex flex-col items-center">
+        <div>cookies {{ vote }}</div>
+        <QuadraticVoteDiamond />
+      </div>
+
+      <BaseButton
+        class="flex items-center justify-between overflow-hidden"
+        @click="voteDown()"
+      >
+        Disagree
+      </BaseButton>
+    </div>
+  </div>
+  <!-- <div class="mb-3">
     <div v-for="(choice, i) in proposal.choices" :key="i">
       <BaseButton
         class="mb-2 flex w-full items-center justify-between overflow-hidden"
@@ -96,7 +108,7 @@ watch(selectedChoices.value, currentValue => {
         </div>
       </BaseButton>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style lang="scss" scoped>

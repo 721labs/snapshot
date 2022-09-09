@@ -157,6 +157,27 @@ onMounted(async () => {
         </div>
       </div>
     </BaseBlock>
+    <!-- TODO -->
+    <BaseBlock
+      v-if="true"
+      :title="$t('create.credit')"
+      icon="info"
+      :icon-tooltip="$t('create.creditExplainer')"
+    >
+      <UiInput
+        v-tippy="{
+          content: !!space.voting?.type
+            ? $t('create.typeEnforced', { type: $t(`voting.${form.credit}`) })
+            : null
+        }"
+        :disabled="!!space.voting?.type"
+        :class="[space.voting?.type ? 'cursor-not-allowed' : 'cursor-pointer']"
+        class="!mb-4"
+        :number="true"
+        :placeholder="$t('create.credits')"
+      >
+      </UiInput>
+    </BaseBlock>
 
     <BaseBlock
       :title="$t('create.period')"
