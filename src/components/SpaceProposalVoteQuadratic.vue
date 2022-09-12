@@ -15,6 +15,20 @@ export default {
     voteUp() {
       if (this.vote < 10) {
         this.vote++;
+
+        const credits = this.vote * this.vote;
+
+        for (let index = 0; index < credits; index++) {
+          const circle = document.getElementById(`pool-${index}`);
+
+          circle.animate(
+            {
+              cy: '150',
+              cx: 300
+            },
+            2000
+          );
+        }
       }
     },
 

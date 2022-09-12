@@ -52,39 +52,48 @@ const circles = [...Array(100)].map((x, item) => {
       xmlns="http://www.w3.org/2000/svg"
       overflow="inherit"
     >
-      <circle
-        v-for="(circle, idx) in circles"
-        :id="circle.id"
-        :key="circle.id"
-        :cx="circle.cx"
-        :cy="circle.cy"
-        :r="5"
-        class="circle"
-      >
-        <animate
-          v-if="idx <= credits"
-          :xlinkHref="circle.link"
-          attributeName="cx"
-          :from="circle.cx"
-          :to="300"
-          dur="10s"
-          begin="1s"
-          fill="freeze"
-          d="circ-anim"
+      <g fill="none" fillRule="evenodd">
+        <circle
+          v-for="bgCircle in circles"
+          :key="bgCircle.id"
+          :cx="bgCircle.cx"
+          :cy="bgCircle.cy"
+          :r="5"
+          class="bg-circle"
         />
 
-        <animate
-          v-if="idx <= credits"
-          :xlinkHref="circle.link"
-          attributeName="cy"
-          :from="circle.cy"
-          :to="150"
-          dur="10s"
-          begin="1s"
-          fill="freeze"
-          d="circ-anim"
-        />
-      </circle>
+        <circle
+          v-for="circle in circles"
+          :id="circle.id"
+          :key="circle.id"
+          :cx="circle.cx"
+          :cy="circle.cy"
+          :r="5"
+          class="circle"
+        >
+          <!-- <animate
+            v-if="idx <= credits"
+            :xlinkHref="circle.link"
+            attributeName="cx"
+            :from="circle.cx"
+            :to="300"
+            dur="2s"
+            begin="1s"
+            fill="freeze"
+          />
+
+          <animate
+            v-if="idx <= credits"
+            :xlinkHref="circle.link"
+            attributeName="cy"
+            :from="circle.cy"
+            :to="150"
+            dur="2s"
+            begin="1s"
+            fill="freeze"
+          /> -->
+        </circle>
+      </g>
     </svg>
   </div>
 </template>
@@ -92,5 +101,9 @@ const circles = [...Array(100)].map((x, item) => {
 <style lang="scss">
 .circle {
   fill: #e1dfd0;
+  z-index: 10;
+}
+.bg-circle {
+  fill: #696966;
 }
 </style>
