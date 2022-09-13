@@ -12,32 +12,73 @@ export default {
   },
   // actions
   methods: {
+    negativeVote(credits, diff) {
+      for (let index = 0; index < diff; index++) {
+        const elementIndex = credits - (index + 1);
+        const circle = document.getElementById(`pool-${elementIndex}`);
+
+        circle.animate(
+          {
+            cy: '7',
+            cx: 7
+          },
+          {
+            duration: 2000,
+            fill: 'forwards'
+          }
+        );
+      }
+    },
+    positiveVote(credits) {
+      for (let index = 0; index < credits; index++) {
+        const circle = document.getElementById(`pool-${index}`);
+
+        circle.animate(
+          {
+            cy: '150',
+            cx: 300
+          },
+          {
+            duration: 2000,
+            fill: 'forwards'
+          }
+        );
+      }
+    },
+
     voteUp() {
       if (this.vote < 10) {
+        const isPositive = this.vote >= 0;
+        const isNegative = this.vote < 0;
+        let credits = this.vote * this.vote;
         this.vote++;
+        let newCredits = this.vote * this.vote;
 
-        const credits = this.vote * this.vote;
+        let diff = credits - newCredits;
 
-        for (let index = 0; index < credits; index++) {
-          const circle = document.getElementById(`pool-${index}`);
-
-          circle.animate(
-            {
-              cy: '150',
-              cx: 300
-            },
-            {
-              duration: 2000,
-              fill: 'forwards'
-            }
-          );
+        if (isPositive) {
+          this.positiveVote(this.vote * this.vote);
+        } else if (isNegative) {
+          this.negativeVote(credits, diff);
         }
       }
     },
 
     voteDown() {
       if (this.vote > -10) {
+        const isPositive = this.vote > 0;
+        const isNegative = this.vote <= 0;
+        let credits = this.vote * this.vote;
         this.vote--;
+        let newCredits = this.vote * this.vote;
+
+        let diff = credits - newCredits;
+
+        if (isPositive) {
+          this.negativeVote(credits, diff);
+        } else if (isNegative) {
+          this.positiveVote(this.vote * this.vote);
+        }
       }
     }
   }

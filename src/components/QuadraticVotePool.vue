@@ -13,7 +13,7 @@ const props = defineProps<{
   credits: number;
 }>();
 
-console.log('credits', props.credits);
+// console.log('credits', props.credits);
 
 let row = 1;
 let cyIncrement = 1;
