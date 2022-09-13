@@ -26,7 +26,10 @@ export default {
               cy: '150',
               cx: 300
             },
-            2000
+            {
+              duration: 2000,
+              fill: 'forwards'
+            }
           );
         }
       }
