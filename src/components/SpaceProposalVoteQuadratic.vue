@@ -12,6 +12,31 @@ export default {
   },
   // actions
   methods: {
+    getYX(index) {
+      const circle = document.getElementById(`pool-${index}`);
+      const diamond = document.getElementById(`diamond-${index}`);
+      console.log('diamond', diamond);
+
+      if (circle && diamond) {
+        const rectA = circle.getBoundingClientRect();
+        const rectB = diamond.getBoundingClientRect();
+
+        const xCenterA = (rectA.left + rectA.right) / 2;
+        const xCenterB = (rectB.left + rectB.right) / 2;
+
+        const yCenterA = (rectA.bottom + rectA.top) / 2;
+        const yCenterB = (rectB.bottom + rectB.top) / 2;
+
+        // 6.5 magic number TODO: investigate
+        const x = xCenterB - xCenterA + 6.5;
+        const y = yCenterB - yCenterA + 6.5;
+
+        return {
+          x: diamond.getBoundingClientRect().x,
+          y: diamond.getBoundingClientRect().y
+        };
+      }
+    },
     negativeVote(credits, diff) {
       for (let index = 0; index < diff; index++) {
         const elementIndex = credits - (index + 1);
@@ -23,8 +48,8 @@ export default {
             cx: 7
           },
           {
-            duration: 2000,
-            fill: 'forwards'
+            duration: 1000,
+            fill: 'both'
           }
         );
       }
@@ -32,14 +57,16 @@ export default {
     positiveVote(credits) {
       for (let index = 0; index < credits; index++) {
         const circle = document.getElementById(`pool-${index}`);
+        const element = this.getYX(index);
+        console.log('element', element);
 
         circle.animate(
           {
-            cy: '150',
-            cx: 300
+            cy: element.y,
+            cx: element.x
           },
           {
-            duration: 2000,
+            duration: 1000,
             fill: 'forwards'
           }
         );
