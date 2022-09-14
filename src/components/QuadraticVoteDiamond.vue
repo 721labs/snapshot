@@ -1,7 +1,12 @@
-<script setup>
+<script setup lang="ts">
 import { ref, watch } from 'vue';
 import { percentageOfTotal } from '@snapshot-labs/snapshot.js/src/voting/quadratic';
 import { useMediaQuery } from '@vueuse/core';
+
+// Dynamic circles for diamond
+const circles = [...Array(100)].map((x, item) => {
+  return {};
+});
 </script>
 
 <template>
@@ -14,7 +19,7 @@ import { useMediaQuery } from '@vueuse/core';
     >
       <g transform="translate(220,110)">
         <circle
-          id="diamond-1"
+          id="diamond-0"
           r="5"
           cx="-20"
           cy="0"
@@ -23,6 +28,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-2"
           r="5"
           cx="-40"
           cy="0"
@@ -31,6 +37,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-1"
           r="5"
           cx="-30"
           cy="-10"
@@ -39,6 +46,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-3"
           r="5"
           cx="-30"
           cy="10"
@@ -47,6 +55,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-6"
           r="5"
           cx="-60"
           cy="0"
@@ -55,6 +64,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-5"
           r="5"
           cx="-50"
           cy="-10"
@@ -63,6 +73,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-7"
           r="5"
           cx="-50"
           cy="10"
@@ -71,6 +82,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-4"
           r="5"
           cx="-40"
           cy="-20"
@@ -79,6 +91,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-8"
           r="5"
           cx="-40"
           cy="20"
@@ -87,6 +100,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-12"
           r="5"
           cx="-80"
           cy="0"
@@ -95,6 +109,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-11"
           r="5"
           cx="-70"
           cy="-10"
@@ -103,6 +118,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-13"
           r="5"
           cx="-70"
           cy="10"
@@ -111,6 +127,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-10"
           r="5"
           cx="-60"
           cy="-20"
@@ -119,6 +136,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-14"
           r="5"
           cx="-60"
           cy="20"
@@ -127,6 +145,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-9"
           r="5"
           cx="-50"
           cy="-30"
@@ -135,6 +154,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-15"
           r="5"
           cx="-50"
           cy="30"
@@ -143,6 +163,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-20"
           r="5"
           cx="-100"
           cy="0"
@@ -151,6 +172,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-19"
           r="5"
           cx="-90"
           cy="-10"
@@ -159,6 +181,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-21"
           r="5"
           cx="-90"
           cy="10"
@@ -167,6 +190,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-18"
           r="5"
           cx="-80"
           cy="-20"
@@ -175,6 +199,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-22"
           r="5"
           cx="-80"
           cy="20"
@@ -183,6 +208,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-17"
           r="5"
           cx="-70"
           cy="-30"
@@ -191,6 +217,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-23"
           r="5"
           cx="-70"
           cy="30"
@@ -199,6 +226,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-16"
           r="5"
           cx="-60"
           cy="-40"
@@ -207,6 +235,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-24"
           r="5"
           cx="-60"
           cy="40"
@@ -215,6 +244,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-30"
           r="5"
           cx="-120"
           cy="0"
@@ -223,6 +253,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-29"
           r="5"
           cx="-110"
           cy="-10"
@@ -231,6 +262,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-31"
           r="5"
           cx="-110"
           cy="10"
@@ -239,6 +271,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-28"
           r="5"
           cx="-100"
           cy="-20"
@@ -247,6 +280,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-32"
           r="5"
           cx="-100"
           cy="20"
@@ -255,6 +289,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-27"
           r="5"
           cx="-90"
           cy="-30"
@@ -263,6 +298,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-33"
           r="5"
           cx="-90"
           cy="30"
@@ -271,6 +307,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-26"
           r="5"
           cx="-80"
           cy="-40"
@@ -279,6 +316,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-34"
           r="5"
           cx="-80"
           cy="40"
@@ -287,6 +325,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-25"
           r="5"
           cx="-70"
           cy="-50"
@@ -295,6 +334,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-35"
           r="5"
           cx="-70"
           cy="50"
@@ -303,6 +343,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-42"
           r="5"
           cx="-140"
           cy="0"
@@ -311,6 +352,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-41"
           r="5"
           cx="-130"
           cy="-10"
@@ -319,6 +361,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-43"
           r="5"
           cx="-130"
           cy="10"
@@ -327,6 +370,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-40"
           r="5"
           cx="-120"
           cy="-20"
@@ -335,6 +379,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-44"
           r="5"
           cx="-120"
           cy="20"
@@ -343,6 +388,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-39"
           r="5"
           cx="-110"
           cy="-30"
@@ -351,6 +397,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-45"
           r="5"
           cx="-110"
           cy="30"
@@ -359,6 +406,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-38"
           r="5"
           cx="-100"
           cy="-40"
@@ -367,6 +415,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-46"
           r="5"
           cx="-100"
           cy="40"
@@ -375,6 +424,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-37"
           r="5"
           cx="-90"
           cy="-50"
@@ -383,6 +433,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-47"
           r="5"
           cx="-90"
           cy="50"
@@ -391,6 +442,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-36"
           r="5"
           cx="-80"
           cy="-60"
@@ -399,6 +451,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-48"
           r="5"
           cx="-80"
           cy="60"
@@ -407,6 +460,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-56"
           r="5"
           cx="-160"
           cy="0"
@@ -415,6 +469,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-55"
           r="5"
           cx="-150"
           cy="-10"
@@ -423,6 +478,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-57"
           r="5"
           cx="-150"
           cy="10"
@@ -431,6 +487,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-54"
           r="5"
           cx="-140"
           cy="-20"
@@ -439,6 +496,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-58"
           r="5"
           cx="-140"
           cy="20"
@@ -447,6 +505,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-53"
           r="5"
           cx="-130"
           cy="-30"
@@ -455,6 +514,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-59"
           r="5"
           cx="-130"
           cy="30"
@@ -463,6 +523,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-52"
           r="5"
           cx="-120"
           cy="-40"
@@ -471,6 +532,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-60"
           r="5"
           cx="-120"
           cy="40"
@@ -479,6 +541,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-51"
           r="5"
           cx="-110"
           cy="-50"
@@ -487,6 +550,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-61"
           r="5"
           cx="-110"
           cy="50"
@@ -495,6 +559,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-50"
           r="5"
           cx="-100"
           cy="-60"
@@ -503,6 +568,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-62"
           r="5"
           cx="-100"
           cy="60"
@@ -511,6 +577,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-49"
           r="5"
           cx="-90"
           cy="-70"
@@ -519,6 +586,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-63"
           r="5"
           cx="-90"
           cy="70"
@@ -527,6 +595,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-72"
           r="5"
           cx="-180"
           cy="0"
@@ -535,6 +604,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-71"
           r="5"
           cx="-170"
           cy="-10"
@@ -543,6 +613,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-73"
           r="5"
           cx="-170"
           cy="10"
@@ -551,6 +622,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-70"
           r="5"
           cx="-160"
           cy="-20"
@@ -559,6 +631,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-74"
           r="5"
           cx="-160"
           cy="20"
@@ -567,6 +640,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-69"
           r="5"
           cx="-150"
           cy="-30"
@@ -575,6 +649,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-75"
           r="5"
           cx="-150"
           cy="30"
@@ -583,6 +658,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-68"
           r="5"
           cx="-140"
           cy="-40"
@@ -591,6 +667,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-76"
           r="5"
           cx="-140"
           cy="40"
@@ -599,6 +676,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-67"
           r="5"
           cx="-130"
           cy="-50"
@@ -607,6 +685,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-77"
           r="5"
           cx="-130"
           cy="50"
@@ -615,6 +694,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-66"
           r="5"
           cx="-120"
           cy="-60"
@@ -623,6 +703,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-78"
           r="5"
           cx="-120"
           cy="60"
@@ -631,6 +712,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-65"
           r="5"
           cx="-110"
           cy="-70"
@@ -639,6 +721,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-79"
           r="5"
           cx="-110"
           cy="70"
@@ -647,6 +730,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-64"
           r="5"
           cx="-100"
           cy="-80"
@@ -655,6 +739,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-80"
           r="5"
           cx="-100"
           cy="80"
@@ -663,6 +748,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-90"
           r="5"
           cx="-200"
           cy="0"
@@ -671,6 +757,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-89"
           r="5"
           cx="-190"
           cy="-10"
@@ -679,6 +766,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-91"
           r="5"
           cx="-190"
           cy="10"
@@ -687,6 +775,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-88"
           r="5"
           cx="-180"
           cy="-20"
@@ -695,6 +784,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-92"
           r="5"
           cx="-180"
           cy="20"
@@ -703,6 +793,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-87"
           r="5"
           cx="-170"
           cy="-30"
@@ -711,6 +802,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-93"
           r="5"
           cx="-170"
           cy="30"
@@ -719,6 +811,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-86"
           r="5"
           cx="-160"
           cy="-40"
@@ -727,6 +820,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-94"
           r="5"
           cx="-160"
           cy="40"
@@ -735,6 +829,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-85"
           r="5"
           cx="-150"
           cy="-50"
@@ -743,6 +838,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-95"
           r="5"
           cx="-150"
           cy="50"
@@ -751,6 +847,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-84"
           r="5"
           cx="-140"
           cy="-60"
@@ -759,6 +856,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-96"
           r="5"
           cx="-140"
           cy="60"
@@ -767,6 +865,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-83"
           r="5"
           cx="-130"
           cy="-70"
@@ -775,6 +874,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-97"
           r="5"
           cx="-130"
           cy="70"
@@ -783,6 +883,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-82"
           r="5"
           cx="-120"
           cy="-80"
@@ -791,6 +892,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-98"
           r="5"
           cx="-120"
           cy="80"
@@ -799,6 +901,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-81"
           r="5"
           cx="-110"
           cy="-90"
@@ -807,6 +910,7 @@ import { useMediaQuery } from '@vueuse/core';
           fill="#E1DFD0"
         ></circle>
         <circle
+          id="diamond-99"
           r="5"
           cx="-110"
           cy="90"
