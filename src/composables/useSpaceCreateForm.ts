@@ -10,6 +10,7 @@ interface ProposalForm {
   body: string;
   discussion: string;
   choices: { key: number; text: string }[];
+  credit: number;
   start: number;
   end: number;
   snapshot: number;
@@ -29,6 +30,7 @@ const EMPTY_PROPOSAL: ProposalForm = {
     { key: 0, text: '' },
     { key: 1, text: '' }
   ],
+  credit: 0,
   start: parseInt((Date.now() / 1e3).toFixed()),
   end: 0,
   snapshot: 0,
