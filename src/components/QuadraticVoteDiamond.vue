@@ -25,7 +25,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="1"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-2"
@@ -34,7 +34,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="2"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-1"
@@ -43,7 +43,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="2"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-3"
@@ -52,7 +52,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="2"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-6"
@@ -61,7 +61,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="3"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-5"
@@ -70,7 +70,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="3"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-7"
@@ -79,7 +79,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="3"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-4"
@@ -88,7 +88,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="3"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-8"
@@ -97,7 +97,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="3"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-12"
@@ -106,7 +106,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="4"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-11"
@@ -115,7 +115,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="4"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-13"
@@ -124,7 +124,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="4"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-10"
@@ -133,7 +133,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="4"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-14"
@@ -142,7 +142,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="4"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-9"
@@ -151,7 +151,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-30"
           data-level="4"
           data-ai="5"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-15"
@@ -160,7 +160,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="30"
           data-level="4"
           data-ai="6"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-20"
@@ -169,7 +169,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="5"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-19"
@@ -178,7 +178,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="5"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-21"
@@ -187,7 +187,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="5"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-18"
@@ -196,7 +196,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="5"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-22"
@@ -205,7 +205,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="5"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-17"
@@ -214,7 +214,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-30"
           data-level="5"
           data-ai="5"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-23"
@@ -223,7 +223,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="30"
           data-level="5"
           data-ai="6"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-16"
@@ -232,7 +232,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-40"
           data-level="5"
           data-ai="7"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-24"
@@ -241,7 +241,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="40"
           data-level="5"
           data-ai="8"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-30"
@@ -250,7 +250,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="6"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-29"
@@ -259,7 +259,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="6"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-31"
@@ -268,7 +268,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="6"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-28"
@@ -277,7 +277,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="6"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-32"
@@ -286,7 +286,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="6"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-27"
@@ -295,7 +295,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-30"
           data-level="6"
           data-ai="5"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-33"
@@ -304,7 +304,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="30"
           data-level="6"
           data-ai="6"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-26"
@@ -313,7 +313,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-40"
           data-level="6"
           data-ai="7"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-34"
@@ -322,7 +322,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="40"
           data-level="6"
           data-ai="8"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-25"
@@ -331,7 +331,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-50"
           data-level="6"
           data-ai="9"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-35"
@@ -340,7 +340,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="50"
           data-level="6"
           data-ai="10"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-42"
@@ -349,7 +349,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="7"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-41"
@@ -358,7 +358,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="7"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-43"
@@ -367,7 +367,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="7"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-40"
@@ -376,7 +376,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="7"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-44"
@@ -385,7 +385,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="7"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-39"
@@ -394,7 +394,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-30"
           data-level="7"
           data-ai="5"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-45"
@@ -403,7 +403,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="30"
           data-level="7"
           data-ai="6"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-38"
@@ -412,7 +412,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-40"
           data-level="7"
           data-ai="7"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-46"
@@ -421,7 +421,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="40"
           data-level="7"
           data-ai="8"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-37"
@@ -430,7 +430,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-50"
           data-level="7"
           data-ai="9"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-47"
@@ -439,7 +439,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="50"
           data-level="7"
           data-ai="10"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-36"
@@ -448,7 +448,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-60"
           data-level="7"
           data-ai="11"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-48"
@@ -457,7 +457,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="60"
           data-level="7"
           data-ai="12"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-56"
@@ -466,7 +466,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="8"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-55"
@@ -475,7 +475,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="8"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-57"
@@ -484,7 +484,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="8"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-54"
@@ -493,7 +493,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="8"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-58"
@@ -502,7 +502,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="8"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-53"
@@ -511,7 +511,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-30"
           data-level="8"
           data-ai="5"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-59"
@@ -520,7 +520,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="30"
           data-level="8"
           data-ai="6"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-52"
@@ -529,7 +529,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-40"
           data-level="8"
           data-ai="7"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-60"
@@ -538,7 +538,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="40"
           data-level="8"
           data-ai="8"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-51"
@@ -547,7 +547,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-50"
           data-level="8"
           data-ai="9"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-61"
@@ -556,7 +556,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="50"
           data-level="8"
           data-ai="10"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-50"
@@ -565,7 +565,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-60"
           data-level="8"
           data-ai="11"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-62"
@@ -574,7 +574,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="60"
           data-level="8"
           data-ai="12"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-49"
@@ -583,7 +583,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-70"
           data-level="8"
           data-ai="13"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-63"
@@ -592,7 +592,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="70"
           data-level="8"
           data-ai="14"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-72"
@@ -601,7 +601,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="9"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-71"
@@ -610,7 +610,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="9"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-73"
@@ -619,7 +619,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="9"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-70"
@@ -628,7 +628,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="9"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-74"
@@ -637,7 +637,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="9"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-69"
@@ -646,7 +646,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-30"
           data-level="9"
           data-ai="5"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-75"
@@ -655,7 +655,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="30"
           data-level="9"
           data-ai="6"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-68"
@@ -664,7 +664,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-40"
           data-level="9"
           data-ai="7"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-76"
@@ -673,7 +673,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="40"
           data-level="9"
           data-ai="8"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-67"
@@ -682,7 +682,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-50"
           data-level="9"
           data-ai="9"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-77"
@@ -691,7 +691,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="50"
           data-level="9"
           data-ai="10"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-66"
@@ -700,7 +700,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-60"
           data-level="9"
           data-ai="11"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-78"
@@ -709,7 +709,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="60"
           data-level="9"
           data-ai="12"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-65"
@@ -718,7 +718,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-70"
           data-level="9"
           data-ai="13"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-79"
@@ -727,7 +727,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="70"
           data-level="9"
           data-ai="14"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-64"
@@ -736,7 +736,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-80"
           data-level="9"
           data-ai="15"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-80"
@@ -745,7 +745,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="80"
           data-level="9"
           data-ai="16"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-90"
@@ -754,7 +754,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="0"
           data-level="10"
           data-ai="0"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-89"
@@ -763,7 +763,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-10"
           data-level="10"
           data-ai="1"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-91"
@@ -772,7 +772,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="10"
           data-level="10"
           data-ai="2"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-88"
@@ -781,7 +781,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-20"
           data-level="10"
           data-ai="3"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-92"
@@ -790,7 +790,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="20"
           data-level="10"
           data-ai="4"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-87"
@@ -799,7 +799,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-30"
           data-level="10"
           data-ai="5"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-93"
@@ -808,7 +808,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="30"
           data-level="10"
           data-ai="6"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-86"
@@ -817,7 +817,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-40"
           data-level="10"
           data-ai="7"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-94"
@@ -826,7 +826,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="40"
           data-level="10"
           data-ai="8"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-85"
@@ -835,7 +835,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-50"
           data-level="10"
           data-ai="9"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-95"
@@ -844,7 +844,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="50"
           data-level="10"
           data-ai="10"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-84"
@@ -853,7 +853,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-60"
           data-level="10"
           data-ai="11"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-96"
@@ -862,7 +862,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="60"
           data-level="10"
           data-ai="12"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-83"
@@ -871,7 +871,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-70"
           data-level="10"
           data-ai="13"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-97"
@@ -880,7 +880,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="70"
           data-level="10"
           data-ai="14"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-82"
@@ -889,7 +889,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-80"
           data-level="10"
           data-ai="15"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-98"
@@ -898,7 +898,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="80"
           data-level="10"
           data-ai="16"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-81"
@@ -907,7 +907,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="-90"
           data-level="10"
           data-ai="17"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
         <circle
           id="diamond-99"
@@ -916,7 +916,7 @@ const circles = [...Array(100)].map((x, item) => {
           cy="90"
           data-level="10"
           data-ai="18"
-          fill="#E1DFD0"
+          fill="#696966"
         ></circle>
       </g>
     </svg>

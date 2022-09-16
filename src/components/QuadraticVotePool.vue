@@ -30,12 +30,9 @@ const circles = [...Array(100)].map((x, item) => {
     index = 0;
   }
 
-  //   console.log(
-  //     `row: ${row} item: ${item} cx: ${cxIncrement * 7} cy: ${cyMap[index]}`
-  //   );
-
   return {
-    id: `pool-${item}`,
+    bgId: `pool-${item}`,
+    id: `animated-${item}`,
     link: `#pool-${item}`,
     cy: cyIncrement * 7,
     cx: cxMap[index]
@@ -55,7 +52,8 @@ const circles = [...Array(100)].map((x, item) => {
       <g fill="none" fillRule="evenodd">
         <circle
           v-for="bgCircle in circles"
-          :key="bgCircle.id"
+          :id="bgCircle.bgId"
+          :key="bgCircle.bgId"
           :cx="bgCircle.cx"
           :cy="bgCircle.cy"
           :r="5"

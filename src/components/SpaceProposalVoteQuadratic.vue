@@ -10,64 +10,42 @@ export default {
       vote: 0
     };
   },
-  // actions
   methods: {
-    getYX(index) {
-      const circle = document.getElementById(`pool-${index}`);
+    getXYAnimation(index) {
+      const circle = document.getElementById(`animated-${index}`);
       const diamond = document.getElementById(`diamond-${index}`);
-      console.log('diamond', diamond);
 
       if (circle && diamond) {
         const rectA = circle.getBoundingClientRect();
         const rectB = diamond.getBoundingClientRect();
 
-        const xCenterA = (rectA.left + rectA.right) / 2;
-        const xCenterB = (rectB.left + rectB.right) / 2;
-
-        const yCenterA = (rectA.bottom + rectA.top) / 2;
-        const yCenterB = (rectB.bottom + rectB.top) / 2;
-
-        // 6.5 magic number TODO: investigate
-        const x = xCenterB - xCenterA + 6.5;
-        const y = yCenterB - yCenterA + 6.5;
-
         return {
-          x: diamond.getBoundingClientRect().x,
-          y: diamond.getBoundingClientRect().y
+          x: rectB.left - rectA.left,
+          y: rectB.top - rectA.top
         };
       }
     },
-    negativeVote(credits, diff) {
-      for (let index = 0; index < diff; index++) {
-        const elementIndex = credits - (index + 1);
-        const circle = document.getElementById(`pool-${elementIndex}`);
+    negativeVote(from, to) {
+      for (let index = 0; index < to; index++) {
+        const elementIndex = from - (index + 1);
+        const circle = document.getElementById(`animated-${elementIndex}`);
+
+        circle.animate([{ transform: `translate(0px, 0px)` }], {
+          duration: 1000,
+          fill: 'both'
+        });
+      }
+    },
+    positiveVote(from, to) {
+      for (let index = from - 1; index >= to; index--) {
+        const circle = document.getElementById(`animated-${index}`);
+        const element = this.getXYAnimation(index);
 
         circle.animate(
-          {
-            cy: '7',
-            cx: 7
-          },
+          [{ transform: `translate(${element.x}px, ${element.y}px)` }],
           {
             duration: 1000,
             fill: 'both'
-          }
-        );
-      }
-    },
-    positiveVote(credits) {
-      for (let index = 0; index < credits; index++) {
-        const circle = document.getElementById(`pool-${index}`);
-        const element = this.getYX(index);
-        console.log('element', element);
-
-        circle.animate(
-          {
-            cy: element.y,
-            cx: element.x
-          },
-          {
-            duration: 1000,
-            fill: 'forwards'
           }
         );
       }
@@ -77,16 +55,16 @@ export default {
       if (this.vote < 10) {
         const isPositive = this.vote >= 0;
         const isNegative = this.vote < 0;
-        let credits = this.vote * this.vote;
+        let prevCredits = this.vote * this.vote;
         this.vote++;
         let newCredits = this.vote * this.vote;
 
-        let diff = credits - newCredits;
+        let diff = prevCredits - newCredits;
 
         if (isPositive) {
-          this.positiveVote(this.vote * this.vote);
+          this.positiveVote(newCredits, prevCredits);
         } else if (isNegative) {
-          this.negativeVote(credits, diff);
+          this.negativeVote(prevCredits, diff);
         }
       }
     },
@@ -95,16 +73,16 @@ export default {
       if (this.vote > -10) {
         const isPositive = this.vote > 0;
         const isNegative = this.vote <= 0;
-        let credits = this.vote * this.vote;
+        let prevCredits = this.vote * this.vote;
         this.vote--;
         let newCredits = this.vote * this.vote;
 
-        let diff = credits - newCredits;
+        let diff = prevCredits - newCredits;
 
         if (isPositive) {
-          this.negativeVote(credits, diff);
+          this.negativeVote(prevCredits, diff);
         } else if (isNegative) {
-          this.positiveVote(this.vote * this.vote);
+          this.positiveVote(newCredits, prevCredits);
         }
       }
     }
