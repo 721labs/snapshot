@@ -7,9 +7,35 @@ export default {
   // state
   data() {
     return {
-      vote: 0
+      vote: 0,
+      defaultColor: '#e1dfd0',
+      negative: [
+        '#FF3856',
+        '#FF3856',
+        '#FF5270',
+        '#FF5270',
+        '#FF6B89',
+        '#FF6B89',
+        '#FF85A3',
+        '#FF85A3',
+        '#FF9EBC',
+        '#FF9EBC'
+      ],
+      positive: [
+        '#0D8C31',
+        '#0D8C31',
+        '#27A64B',
+        '#27A64B',
+        '#40BF64',
+        '#40BF64',
+        '#5AD97E',
+        '#5AD97E',
+        '#73F297',
+        '#73F297'
+      ]
     };
   },
+
   methods: {
     getXYAnimation(index) {
       const circle = document.getElementById(`animated-${index}`);
@@ -30,10 +56,22 @@ export default {
         const elementIndex = from - (index + 1);
         const circle = document.getElementById(`animated-${elementIndex}`);
 
-        circle.animate([{ transform: `translate(0px, 0px)` }], {
+        circle.animate([{ transform: `translate(0px, 0px)`, fill: 'red' }], {
           duration: 1000,
           fill: 'both'
         });
+
+        circle.animate(
+          [
+            {
+              fill: this.defaultColor
+            }
+          ],
+          {
+            duration: 10,
+            fill: 'both'
+          }
+        );
       }
     },
     positiveVote(from, to) {
@@ -45,6 +83,24 @@ export default {
           [{ transform: `translate(${element.x}px, ${element.y}px)` }],
           {
             duration: 1000,
+            fill: 'both'
+          }
+        );
+
+        console.log('vote', this.vote * -1 - 1);
+
+        circle.animate(
+          [
+            {
+              fill:
+                this.vote > 0
+                  ? this.positive[this.vote - 1]
+                  : this.negative[this.vote * -1 - 1]
+            }
+          ],
+          {
+            duration: 500,
+            delay: 500,
             fill: 'both'
           }
         );
